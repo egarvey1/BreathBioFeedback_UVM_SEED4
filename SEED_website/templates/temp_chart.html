@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--This code is also not used anymore but here as a reference as needed-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Chart</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+    <h1>Temperature Visualization Lab</h1>
+    <canvas class="mt-10" id="temp_chart"></canvas>
+
+    <main role="main" class="container">
+        <table class="mt-5 table">
+            <thead>
+                <tr>
+                    <th>Timestamps</th>
+                    <th>Fahrenheit</th>
+                    <th>Celcius</th>
+                </tr>
+            </thead>
+            <tbody id="temp_tbody"></tbody>
+        </table>
+    </main>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  	<script src="static/temp_chart.js"></script>
+    <script src="static/student.js"></script>
+
+</body>
+</html>

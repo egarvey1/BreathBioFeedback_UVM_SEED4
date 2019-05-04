@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/SEED_custom.css') }}">
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</head>
+<body id="new_user">
+    <article class = 'greeting'>
+            <h1>Welcome! </h1>
+	    <h3>Please fill out the following forms to create your user profile</h3>
+    </article>
+
+
+    <div class="container" style="margin-top:50px;">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form action="" method="POST">
+                    {% if error %}
+                        <p class=error><strong>Error:</strong> {{ error }}
+                    {% endif %}
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Your Username</span>
+                        <input type="text" class="form-control" name="username" id="user" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Your Password</span>
+                        <input type="text" class="form-control" id="pass" name="password" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Your Nickname</span>
+                        <input type="text" class="form-control" name="nickname" id="nick" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Your Age</span>
+                        <input type="text" class="form-control" id="a" name="age" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Your Weight</span>
+                        <input type="text" class="form-control" name="weight" id="w" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Your Gender (M/F)</span>
+                        <input type="text" class="form-control" id="gend" name="gender" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+
+
+
+
+                    <input type="Submit" value="Create New User Login" class="btn btn-default btn-sm">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
